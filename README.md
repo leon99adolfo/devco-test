@@ -19,5 +19,8 @@ The following image shows the structure of the project:
 ## Soluction 🚀
 Project create a serverless function in aws lambda, this aws lambda executes when a excel file uploads to S3 bucket and this creates a new txt file and this file is added to same bucket with the solution requested.
 
+## Costs
+The cost of the solution is 0. This is because AWS has 5 GB free in S3 services and 1'000,000 free executions for lambda functions.
 
+![alt text](https://github.com/leon99adolfo/devco-test/blob/master/assets/images/costs.jpg?raw=true)
 
