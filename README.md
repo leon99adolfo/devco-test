@@ -24,3 +24,7 @@ The cost of the solution is 0. This is because AWS has 5 GB free in S3 services 
 
 ![alt text](https://github.com/leon99adolfo/devco-test/blob/master/assets/images/costs.jpg?raw=true)
 
+## Pipeline
+The pipeline was configured to run when a person makes a push to the github repository
+
+![alt text](https://github.com/leon99adolfo/devco-test/blob/master/assets/images/pipeline.JPG?raw=true)
