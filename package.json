@@ -1,0 +1,27 @@
+{
+  "name": "devco-excel",
+  "version": "1.0.0",
+  "author": "Adolfo Leon Canizalez",
+  "description": "Serverless Lambda using Typescript",
+  "main": "handler.ts",
+  "scripts": {
+    "build": "tsc",
+    "package": "npx serverless package"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.831.0",
+    "azure-devops-node-api": "^10.2.1",
+    "request": "^2.88.2",
+    "read-excel-file": "^5.0.0",
+    "reflect-metadata": "^0.1.13",
+    "typedi": "^0.10.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.61",
+    "@types/node": "^14.0.27",
+    "serverless": "^2.20.1",
+    "serverless-offline": "^6.8.0",
+    "serverless-plugin-typescript": "^1.1.9",
+    "typescript": "^4.1.3"
+  }
+}
