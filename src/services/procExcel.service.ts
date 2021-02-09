@@ -16,6 +16,10 @@ export default class ProcExcelService {
     return result;
   }
 
+  public getOnlyName(name: string): string {
+    return name.split('.').slice(0, -1).join('.');
+  }
+
   public async ConvertExcelToTxtFile(stream: any): Promise<string> {
     let newStr: string = "";
 

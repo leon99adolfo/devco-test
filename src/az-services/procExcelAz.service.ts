@@ -10,10 +10,11 @@ export default async (event: any) => {
 
   const procExcelServiceInstance = Container.get(ProcExcelService);
   let data: string = await procExcelServiceInstance.ConvertExcelToTxtFile(objFile.Body);
+  let newFl = procExcelServiceInstance.getOnlyName(event.Records[0].s3.object.key); 
 
   const newTxtFile = {
     Bucket: event.Records[0].s3.bucket.name,
-    Key: `result_${event.Records[0].s3.object.key}`,
+    Key: `result_${newFl}.txt`,
     Body: data,
     ContentType: "text/plain"
   };
