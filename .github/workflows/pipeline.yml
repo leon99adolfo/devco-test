@@ -1,9 +1,5 @@
 name: devco-excel-pipeline
 
-plugins:
-  - serverless-offline
-  - serverless-plugin-typescript
-
 on:
   push:
     branches: [ master ]
@@ -37,6 +33,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - run: npm i
     - name: serverless deploy
       uses: serverless/github-action@master
       with:
