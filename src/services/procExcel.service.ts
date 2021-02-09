@@ -31,6 +31,7 @@ export default class ProcExcelService {
           newStr += '\n';
         });
       });
+      //console.log(newStr);
       return newStr;
     }
     else{
